@@ -1,26 +1,49 @@
 :root {
-  
+  --primary-red: hsl(10, 79%, 65%);
+  --primary-cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --light-brown: hsl(28, 10%, 53%);
+  --neutral-cream: hsl(27, 66%, 92%);
+  --light-orange: hsl(33, 100%, 98%);
+  --primary-font: 'DM Sans', sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
+  font-weight: 400;
+  font-family: var(--primary-font);
+  background: var(--neutral-cream);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
 }
 
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   width: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute;  
+  position: absolute;
+}
+
+main.component-container {
+  max-width: 345px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.fm-attribution-row {
+  margin-bottom: 1.5rem;
 }
 
 .fm-attribution {
-  font-size: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .fm-attribution a {

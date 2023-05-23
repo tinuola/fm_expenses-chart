@@ -15,6 +15,16 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png" />
     <!-- Google Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
     <!-- Project Stylesheets -->
     <link
       rel="stylesheet"
@@ -22,6 +32,9 @@
     <link
       rel="stylesheet"
       href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="css/utilities.css" />
     <!-- Scripts -->
     <script
       src="js/script.js"
@@ -29,20 +42,46 @@
     <title>Expenses Chart Component | Frontend Mentor</title>
   </head>
   <body>
-    <h1>Expenses Chart Component - A Frontend Mentor Project</h1>
+    <header>
+      <h1 class="sr-only">Expenses Chart Component - A Frontend Mentor Project</h1>
+    </header>
 
-    My balance<br />
-    $921.48<br />
+    <main class="component-container">
+      <div class="component__header">
+        <div>
+          <h2>My balance</h2>
+          <h3>$921.48</h3>
+        </div>
+        <div>
+          <img
+            src="./assets/images/logo.svg"
+            alt="App logo" />
+        </div>
+      </div>
 
-    Spending - Last 7 days<br />
-    Total this month<br />
-    $478.33<br />
+      <div class="component__main">
+        <div class="component__body">
+          <h2>Spending - Last 7 days</h2>
+          <div id="chart"></div>
+        </div>
 
-    +2.4%<br />
-    from last month
+        <hr />
 
-    <footer class="fm-byline-row">
-      <p class="fm-byline">
+        <div class="component__footer">
+          <div class="current-month">
+            <p>Total this month</p>
+            <p>$478.33</p>
+          </div>
+          <div class="previous-month">
+            <p>+2.4%</p>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="fm-attribution-row">
+      <p class="fm-attribution">
         Challenge by
         <a
           href="https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt"
@@ -50,7 +89,7 @@
           >Frontend Mentor</a
         >
       </p>
-      <p class="fm-byline">
+      <p class="fm-attribution">
         Coded by
         <a
           href="https://github.com/tinuola/fm_expenses-chart"
