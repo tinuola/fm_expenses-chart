@@ -5,6 +5,7 @@
   --light-brown: hsl(28, 10%, 53%);
   --neutral-cream: hsl(27, 66%, 92%);
   --light-orange: hsl(33, 100%, 98%);
+  --white: hsla(0, 0%, 100%, 1);
   --primary-font: 'DM Sans', sans-serif;
 }
 
@@ -12,6 +13,7 @@ body {
   font-weight: 400;
   font-family: var(--primary-font);
   background: var(--neutral-cream);
+  color: var(--dark-brown);
   display: grid;
   grid-template-rows: auto 1fr auto;
   justify-items: center;
@@ -30,10 +32,56 @@ body {
   position: absolute;
 }
 
-main.component-container {
-  max-width: 345px;
+.component-container {
+  width: 345px;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.component__header {
+  background-color: var(--primary-red);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.component__header-titles {
+  color: var(--white);
+}
+
+.component__logo {
+  width: 55px;
+}
+
+.component__main {
+  background-color: var(--light-orange);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.25rem;
+}
+
+.component__body {
+}
+
+.component__footer {
+}
+
+.current-month p:first-of-type,
+.previous-month p:last-of-type {
+  color: var(--light-brown);
+}
+
+hr.divider {
+  border: 0;
+  border-top: 1px solid var(--neutral-cream);
+  border-bottom: 1px solid var(--neutral-cream);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#chart {
+  height: 177px;
+  background-color: var(--light-brown);
+  margin-top: 3.25rem;
 }
 
 .fm-attribution-row {

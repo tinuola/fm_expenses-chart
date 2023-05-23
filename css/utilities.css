@@ -1,4 +1,11 @@
-/* Font utilities */
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: inherit;
+}
+
 .font-1 {
   font-size: 0.75rem;
 }
@@ -13,6 +20,10 @@
 
 .font-4 {
   font-size: 1.875rem;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -31,4 +42,11 @@
   .font-4 {
     font-size: 3rem;
   }
+}
+
+/* Alignment */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
