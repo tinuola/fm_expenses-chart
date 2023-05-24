@@ -8,7 +8,13 @@ export function App() {
       {/* <h1>Hello world again!</h1> */}
       {Data.map((item) => {
         const { id, day, amount } = item;
-        return <h2>{id}</h2>;
+        return (
+          <Cell
+            key={id}
+            day={day}
+            amount={amount}
+          />
+        );
       })}
     </div>
   );
