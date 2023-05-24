@@ -109,8 +109,8 @@ hr.divider {
 }
 
 #chart {
-  height: 175px;
-  background-color: var(--light-brown);
+  /* height: 175px;
+  background-color: var(--light-brown); */
   margin-top: 3.25rem;
 }
 
