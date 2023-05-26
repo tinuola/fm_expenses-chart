@@ -144,11 +144,11 @@ hr.divider {
   background-color: hsla(10, 100%, 76%, 1);
 }
 
-.chart-cell_bground--active {
+.chart-cell__bground--active {
   background-color: var(--primary-cyan);
 }
 
-.chart-cell_bground--active:hover {
+.chart-cell__bground--active:hover {
   background-color: hsla(186, 49%, 80%, 1);
 }
 
