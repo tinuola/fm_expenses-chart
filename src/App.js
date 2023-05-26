@@ -5,24 +5,19 @@ import Data from './data.json';
 
 export function App() {
   const today = new Date();
+
   const nameDay = today.getDay();
 
-  const [day, setDay] = useState(nameDay);
-
-  console.log('loaded');
-
-  function checkDate(n) {
-    if (n === nameDay) {
-      return true;
-    }
+  function checkDayOfWeek(n) {
+    return n === nameDay || (nameDay === 0 && n === 7);
   }
 
   return (
     <div className='chart-container'>
       {Data.map((item) => {
         const { id, day, amount } = item;
-        let status = checkDate(id);
-        // console.log(status);
+        let status = checkDayOfWeek(id);
+
         return (
           <Cell
             key={id}
