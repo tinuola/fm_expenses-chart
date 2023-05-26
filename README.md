@@ -13,11 +13,11 @@ Solution to the _[Expenses Chart Component](https://www.frontendmentor.io/challe
 
 ### Solution
 
-Live Site: [https://tinuola.github.io/fm_expenses-chart/](https://tinuola.github.io/fm_expenses-chart/)
+Live Site: [https://tt-fm-expenses-chart.netlify.app/](https://tt-fm-expenses-chart.netlify.app/)
 
 ### Retrospective
 
--
+- _Project in Progress_
 
 ### Enhancement(s)
 
@@ -25,7 +25,8 @@ Live Site: [https://tinuola.github.io/fm_expenses-chart/](https://tinuola.github
 
 ### Tools & Resources
 
-- HTML, CSS, JavaScript
+- HTML & CSS
+- React
 - CSS Resets
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_

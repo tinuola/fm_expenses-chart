@@ -33,12 +33,12 @@ body {
 }
 
 .component-container {
-  width: 345px;
+  width: 375px;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .component-container {
     width: 540px;
   }
@@ -51,7 +51,7 @@ body {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .component__header {
     padding: 1.75rem 2.5rem 1.5rem 2rem;
     margin-bottom: 1.5rem;
@@ -66,7 +66,7 @@ body {
   width: 60px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .component__logo {
     width: 72px;
   }
@@ -78,16 +78,10 @@ body {
   padding: 1.5rem 1.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .component__main {
     padding: 2rem 2.5rem 2.5rem;
   }
-}
-
-.component__body {
-}
-
-.component__footer {
 }
 
 .current-month p:first-of-type,
@@ -102,7 +96,7 @@ hr.divider {
   margin: 1.5rem auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   hr.divider {
     margin: 2rem auto;
   }
@@ -119,7 +113,7 @@ hr.divider {
   column-gap: 0.75rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .chart-container {
     -moz-column-gap: 1.125rem;
     column-gap: 1.125rem;
@@ -135,20 +129,49 @@ hr.divider {
 }
 
 .chart-cell__bground {
-  background-color: var(--primary-red);
   margin-bottom: 0.75rem;
   width: 100%;
   border-radius: 0.25rem;
   cursor: pointer;
+  position: relative;
 }
 
-.chart-cell__bground:hover {
+.chart-cell__bground--default {
+  background-color: var(--primary-red);
+}
+
+.chart-cell__bground--default:hover {
   background-color: hsla(10, 100%, 76%, 1);
 }
 
-@media (min-width: 768px) {
+.chart-cell__bground--active {
+  background-color: var(--primary-cyan);
+}
+
+.chart-cell__bground--active:hover {
+  background-color: hsla(186, 49%, 80%, 1);
+}
+
+.chart-cell__bground:hover::before {
+  content: attr(data-amount);
+  position: absolute;
+  background-color: var(--dark-brown);
+  color: var(--neutral-cream);
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  bottom: 100%;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 600px) {
   .chart-cell__bground {
     margin-bottom: 0.5rem;
+  }
+
+  .chart-cell__bground:hover::before {
+    padding: 0.35rem;
+    font-size: 0.825rem;
   }
 }
 
