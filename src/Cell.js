@@ -3,7 +3,7 @@ import React from 'react';
 const Cell = ({ day, amount, active }) => {
   let height = Math.ceil(amount);
 
-  const setCellHeight = {
+  const cellHeight = {
     height: height * 2.85 + 'px',
   };
 
@@ -14,7 +14,7 @@ const Cell = ({ day, amount, active }) => {
           active ? 'chart-cell__bground--active' : 'chart-cell__bground--default'
         } font-1 `}
         data-amount={`$${amount}`}
-        style={setCellHeight}></div>
+        style={cellHeight}></div>
       <p>{day}</p>
     </div>
   );

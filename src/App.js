@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import Cell from './Cell';
 import Data from './data.json';
 
