@@ -129,7 +129,6 @@ hr.divider {
 }
 
 .chart-cell__bground {
-  background-color: var(--primary-red);
   margin-bottom: 0.75rem;
   width: 100%;
   border-radius: 0.25rem;
@@ -137,8 +136,20 @@ hr.divider {
   position: relative;
 }
 
-.chart-cell__bground:hover {
+.chart-cell__bground--default {
+  background-color: var(--primary-red);
+}
+
+.chart-cell__bground--default:hover {
   background-color: hsla(10, 100%, 76%, 1);
+}
+
+.chart-cell_bground--active {
+  background-color: var(--primary-cyan);
+}
+
+.chart-cell_bground--active:hover {
+  background-color: hsla(186, 49%, 80%, 1);
 }
 
 .chart-cell__bground:hover::before {
