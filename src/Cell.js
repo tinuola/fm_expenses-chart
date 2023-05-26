@@ -10,9 +10,10 @@ const Cell = ({ day, amount }) => {
   return (
     <div className='chart-cell__wrapper'>
       <div
-        className='chart-cell__bground'
+        className='chart-cell__bground font-1'
+        data-amount={`$${amount}`}
         style={cellStyle}></div>
-      <p className='font-1'>{day}</p>
+      <p>{day}</p>
     </div>
   );
 };
