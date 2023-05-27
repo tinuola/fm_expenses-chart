@@ -20,6 +20,10 @@ Live Site: [https://tt-fm-expenses-chart.netlify.app/](https://tt-fm-expenses-ch
 - Using a framework on small projects can be overkill, yet simpler projects are ideal for practice; is there a middle ground? It turns out there is. My initial plan was to make this a 100% React project, but after reading through the [React.dev install guides](https://react.dev/learn/add-react-to-an-existing-project), I opted to use React only to render the actual chart, and created the other elements statically.
 - I kept the setup as lightweight as possible--using only [Parcel](https://parceljs.org/) as a dependency for the build process.
 
+### Pending Enhancement(s)?
+
+- Animate loading the individual cells
+
 ### Tools & Resources
 
 - HTML & CSS
