@@ -22,7 +22,7 @@ export function App() {
             key={id}
             day={day}
             amount={amount}
-            active={status}
+            currentDay={status}
           />
         );
       })}

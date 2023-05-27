@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cell = ({ day, amount, active }) => {
+const Cell = ({ day, amount, currentDay }) => {
   let height = Math.ceil(amount);
 
   const cellHeight = {
@@ -11,7 +11,7 @@ const Cell = ({ day, amount, active }) => {
     <div className='chart-cell__wrapper'>
       <div
         className={`chart-cell__bground ${
-          active ? 'chart-cell__bground--active' : 'chart-cell__bground--default'
+          currentDay ? 'chart-cell__bground--current-day' : 'chart-cell__bground--default'
         } font-1 `}
         data-amount={`$${amount}`}
         style={cellHeight}></div>
