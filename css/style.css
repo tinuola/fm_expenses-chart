@@ -36,11 +36,13 @@ body {
   width: 375px;
   padding-right: 1rem;
   padding-left: 1rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 600px) {
   .component-container {
     width: 540px;
+    margin-top: 4rem;
   }
 }
 
@@ -187,7 +189,7 @@ hr.divider {
 
 .fm-attribution-row {
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .fm-attribution {
