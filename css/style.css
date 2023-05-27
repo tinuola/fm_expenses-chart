@@ -150,11 +150,11 @@ hr.divider {
   background-color: hsla(10, 100%, 76%, 1);
 }
 
-.chart-cell__bground--active {
+.chart-cell__bground--current-day {
   background-color: var(--primary-cyan);
 }
 
-.chart-cell__bground--active:hover {
+.chart-cell__bground--current-day:hover {
   background-color: hsla(186, 49%, 80%, 1);
 }
 
